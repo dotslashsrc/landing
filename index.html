@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dotslash Software</title>
+	<style>
+		body {
+			background-color: black;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+            overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: none;
+		}
+		#dot-slash-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+            height: 100%;
+            width: 100%;
+		}
+		#dot {
+			width: 20px;
+			height: 20px;
+			background-color: white;
+			border-radius: 50%;
+			position: absolute;
+			z-index: 1;
+		}
+		#slash {
+			width: 6px;
+			height: 80px;
+			background-color: white;
+			position: absolute;
+			z-index: 1;
+			transform-origin: center bottom;
+		}
+	</style>
+</head>
+<body>
+	<div id="dot-slash-container">
+		<div id="dot"></div>
+		<div id="slash"></div>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>
