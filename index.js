@@ -9,7 +9,7 @@ let centerX = window.innerWidth / 2;
 let centerY = window.innerHeight / 2;
 let dotYOffset = (parseInt(getComputedStyle(slash).height.slice(0,-2), 10)) - (dot.offsetHeight)/2;
 let dotXOffset = (dot.offsetWidth - parseInt(getComputedStyle(slash).width.slice(0,-2), 10))/2;
-let slashTilt = 0.5;
+let slashTilt = 0.25;
 dot.style.left = (centerX - dotXOffset) + 'px';
 dot.style.top = (centerY + dotYOffset) + 'px';
 
